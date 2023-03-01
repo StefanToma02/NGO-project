@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/Muntii-Carpati.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 110px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #8086f1;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 60px;
+}
+.text-box p {
+  margin: 20px 0 40px;
+  font-size: 15px;
+  color: white;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #8086f1;
+  background: #8086f1;
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .nav-links {
+    position: fixed;
+    background: #8086f1;
+    height: 100vh;
+    width: 170px;
+    top: 0;
+    right: -170px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+/*-----Noutati----*/
+.noutati {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 41px;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.primaN {
+  flex-basis: 45%;
+  background: #f0f0fc;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 700;
+  margin: auto;
+}
+.primaN:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+noutati.h1 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Recenzii */
+.recenzii {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.recenzii-col {
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #f0f0fc;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+}
+.recenzii-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.recenzii-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.recenzii-col p {
+  padding: 0;
+}
+.recenzii-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.recenzii-col .fa {
+  color: gold;
+}
+/* ----footer----- */
+.footer {
+  background-color: rgb(216, 232, 245);
+  font-family: "Montserrat";
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  padding: 30px 0;
+}
+h1 {
+  font-size: 41px;
+  font-weight: 600;
+}
+.roww {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+/* .footer .icons a{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.footer .icons a:hover{
+    transform:scale(1.5);
+} */
+.footer-col {
+  width: 20%;
+  padding: 0 30px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #8086f1;
+  height: 2px;
+  box-sizing: border-box;
+  width: 120px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.892);
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+  padding-left: 8%;
+}
+
+.footer-col ul li a:hover {
+  color: blue;
+  padding-left: 8px;
+}
+
+.footer-col .icons a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0px 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.footer-col .icons a:hover {
+  color: blue;
+  transform: scale(1.5);
+}
+
+.footer-col img:hover {
+  cursor: pointer;
+}
+
+.cpy {
+  text-align: center;
+  margin-top: 50px;
+}
+@media (max-width: 700px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    flex-direction: column;
+    font-size: 25px;
+  }
+}
+
+/*---------Despre--------*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/despre1.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.sub-header h1 {
+  margin-top: 100px;
+}
+.despre {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.despre-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.despre-col img {
+  width: 100%;
+}
+.despre-col h1 {
+  padding-top: 0;
+  font-size: 26px;
+}
+.despre-col p {
+  padding: 15px 0 25px;
+  font-size: 17px;
+}
+/* -----------Implica-te---------- */
+.implica {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.implica-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.implica img {
+  width: 100%;
+}
+.implica-col h1 {
+  padding-top: 0;
+  font-size: 26px;
+}
+.implica-col p {
+  padding: 15px 0 25px;
+  font-size: 17px;
+}
+.directioneaza {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.directioneaza-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.directioneaza img {
+  width: 100%;
+}
+.directioneaza-col h1 {
+  padding-top: 0;
+  font-size: 26px;
+}
+.directioneaza-col p {
+  padding: 15px 0 25px;
+  font-size: 17px;
+}
+.detalii {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.comment {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+.comment h3 {
+  text-align: left;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+.comment-form button {
+  margin: 10px 0;
+  column-rule-color: black;
+}
+.blue-btn {
+  border: 1px solid #8086f1;
+  background: transparent;
+  color: #8086f1;
+  color: black;
+}
+/* ----------Contact--------- */
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa {
+  font-size: 28px;
+  color: #8086f1;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* ---------Doneaza---------- */
+.donate {
+  width: 80%;
+  margin: auto;
+}
+.donate-col {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+.donate-col input,
+.contact-col label {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container {
+  height: 10vh;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  display: block;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+label span {
+  display: flex;
+  align-items: left;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+label span:hover,
+input[type="radio"]:checked + span {
+  background-color: #d6d6e5;
+}
+label span::before {
+  content: "";
+  background-color: #ffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 6px;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 2px #00005c;
+}
+input[type="radio"]:checked + span:before {
+  box-shadow: inset 0 0 0 10px #00005c;
+}
